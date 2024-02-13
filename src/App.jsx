@@ -56,13 +56,13 @@ function App() {
               src="./assets/linkedin.png"
               alt="My LinkedIn profile"
               class="icon"
-              onclick="location.href='https://linkedin.com/'"
+              onclick="location.href='https://www.linkedin.com/in/navdeepbhatt08/'"
             />
             <img
               src="./assets/github.png"
               alt="My Github profile"
               class="icon"
-              onclick="location.href='https://github.com/'"
+              onclick="location.href='https://github.com/Navdeepbhatt08'"
             />
           </div>
         </div>
@@ -81,7 +81,7 @@ function App() {
                   class="icon"
                 />
                 <h3>Experience</h3>
-                <p>2+ years <br />Frontend Development</p>
+                <p>1+ years <br />Frontend Development</p>
               </div>
               <div class="details-container">
                 <img
@@ -90,17 +90,12 @@ function App() {
                   class="icon"
                 />
                 <h3>Education</h3>
-                <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                <p>BCA. Bachelors Degree</p>
               </div>
             </div>
             <div class="text-container">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
+                I am currently working as a Front-End Web Developer and working on Full Stack Development. Using Mern Stack (Mongo DB , Express Js, React Js, Node Js).
               </p>
             </div>
           </div>
@@ -171,33 +166,22 @@ function App() {
               </div>
             </div>
             <div class="details-container">
-              <h2 class="experience-sub-title">Frontend Development</h2>
+              <h2 class="experience-sub-title">Backend Development</h2>
               <div class="article-container">
                 <article>
                   <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                    <h3>PostgreSQL</h3>
-                    <p>Basic</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark.png"
+                    src="./assets/node.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
                     <h3>Node JS</h3>
-                    <p>Intermediate</p>
+                    <p>Basic</p>
                   </div>
                 </article>
                 <article>
                   <img
-                    src="./assets/checkmark.png"
+                    src="./assets/express.png"
                     alt="Experience icon"
                     class="icon"
                   />
@@ -208,13 +192,41 @@ function App() {
                 </article>
                 <article>
                   <img
-                    src="./assets/checkmark.png"
+                    src="./assets/php.png"
                     alt="Experience icon"
                     class="icon"
                   />
                   <div>
-                    <h3>Git</h3>
+                    <h3>P H P</h3>
                     <p>Intermediate</p>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">DataBase</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/mysql.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>MY SQL</h3>
+                    <p>Experience</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/mongo.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Mongo DB</h3>
+                    <p>Basic</p>
                   </div>
                 </article>
               </div>
@@ -241,7 +253,7 @@ function App() {
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
+              <h2 class="experience-sub-title project-title">Music P</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -251,7 +263,7 @@ function App() {
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
+                  onclick="location.href='https://navdeepbhatt08.github.io/Music-player-by-navdeep/'"
                 >
                   Live Demo
                 </button>
@@ -307,12 +319,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"
-        />
+ 
       </section>
       <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
