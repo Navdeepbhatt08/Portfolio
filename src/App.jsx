@@ -8,7 +8,7 @@ function App() {
       <nav id="desktop-nav">
         <div class="logo"><img src="./assets/logo.png" /></div>
         <div>
-          <ul class="nav-links">
+          <ul class="nav-links" >
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -16,9 +16,10 @@ function App() {
           </ul>
         </div>
       </nav>
+      
       <nav id="hamburger-nav">
         <div class="logo"></div>
-        <div class="hamburger-menu">
+        <div class="hamburger-menu">    
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
@@ -331,7 +332,7 @@ function App() {
               alt="Email icon"
               class="icon contact-icon email-icon"
             />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            <p><a href="mailto:examplemail@gmail.com">navdeep9557@gmail.com</a></p>
           </div>
           <div class="contact-info-container">
             <img
@@ -339,7 +340,7 @@ function App() {
               alt="LinkedIn icon"
               class="icon contact-icon"
             />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            <p><a href="https://www.linkedin.com/in/navdeepbhatt08/">LinkedIn</a></p>
           </div>
         </div>
       </section>
@@ -354,7 +355,7 @@ function App() {
             </ul>
           </div>
         </nav>
-        <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p>Copyright &#169; 2023 Navdeep Bhatt. All Rights Reserved.</p>
       </footer>
     </>
   )
