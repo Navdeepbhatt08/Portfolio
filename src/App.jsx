@@ -1,5 +1,7 @@
-import { useState } from 'react'
 import './App.css'
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function App() {
 
@@ -16,10 +18,10 @@ function App() {
           </ul>
         </div>
       </nav>
-      
+
       <nav id="hamburger-nav">
         <div class="logo"></div>
-        <div class="hamburger-menu">    
+        <div class="hamburger-menu">
           <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
@@ -42,13 +44,11 @@ function App() {
           <h1 class="title">NAVDEEP BHATT</h1>
           <p class="section__text__p2">Frontend Developer</p>
           <div class="btn-container">
-            <button
-              class="btn btn-color-2"
-              onclick="window.open('./assets/resume.pdf')"
-            >
-              Download CV
+            <button class="btn btn-color-2" onclick="window.open('Resume.pdf')" >
+              Resume
             </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+
+            <button class="btn btn-color-1" onclick={()=>useNavigate("#contact")}>
               Contact Info
             </button>
           </div>
@@ -65,6 +65,12 @@ function App() {
               class="icon"
               onclick="location.href='https://github.com/Navdeepbhatt08'"
             />
+
+            <img src="./assets/twitter.png"
+              alt="My Twitter profile"
+              class="icon"
+              onclick="location.href='https://twitter.com/NavdeepBhatt08'
+            "/>
           </div>
         </div>
       </section>
@@ -242,105 +248,65 @@ function App() {
         />
       </section>
       <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Music P</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://navdeepbhatt08.github.io/Music-player-by-navdeep/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+            <h2 class="experience-sub-title project-title">Music Player</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://navdeepbhatt08.github.io/Music-player-by-navdeep/'">
+              Preview
+              </button>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Live Notifications</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Preview
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Zomato Clone</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Preview
+              </button>
+  
+              
             </div>
           </div>
         </div>
- 
-      </section>
+      </div>
+    
+    </section>
       <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
-            <p><a href="mailto:examplemail@gmail.com">navdeep9557@gmail.com</a></p>
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p><a href="mailto:navdeep9557@gmail.com">EMail</a></p>
           </div>
           <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com/in/navdeepbhatt08/">LinkedIn</a></p>
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+            <p><a href="https://www.linkedin.com/in/navdeepbhatt08/" target="_blank">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_instagram-512.png" alt="Insta icon" class="icon contact-icon" />
+            <a href="https://www.instagram.com/navdeepbhatt.08/" target="_blank">Instagram</a><p></p>
           </div>
         </div>
       </section>
